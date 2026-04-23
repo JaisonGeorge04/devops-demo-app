@@ -10,11 +10,11 @@ provider "aws" {
 region = "ap-south-1"
 }
 resource "aws_s3_bucket" "demo_bucket" {
-bucket = "jaison12-bucket"
+bucket = "jaison12-bucket-12345"
 }
 
 resource "aws_vpc" "demo_vpc" {
-cidr_block = "10.0.0.0/26"
+cidr_block = "10.0.0.0/16"
 }
 
 resource "aws_subnet" "public_subnet" {
