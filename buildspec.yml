@@ -3,22 +3,17 @@ version: 0.2
 phases:
   install:
     commands:
-      - echo "Nothing to install for static HTML"
-
-  pre_build:
-    commands:
-      - echo "Pre-build phase skipped"
+      - echo "Installing..."
 
   build:
     commands:
-      - echo "Build phase skipped (static HTML only)"
+      - echo "Build started"
 
   post_build:
     commands:
-      - echo "Packaging static HTML files for deployment"
+      - echo "Build completed"
 
 artifacts:
   files:
     - '**/*'
-  discard-paths: yes
-  base-directory: .
+    - '**/*'
